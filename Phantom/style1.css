@@ -1,0 +1,166 @@
+/* CSS Variables for consistent theming */
+:root {
+    --background-color: #24003d;
+    --header-bg-color: #1f1f1f;
+    --header-text-color: #fff;
+    --highlight-color: #ff6f61;
+    --text-color: #fff;
+    --button-bg-color: #ff6f61;
+    --button-hover-bg-color: #f81900;
+    --input-border-color: #ccc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--header-bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: var(--text-color);
+    margin-top: 0;
+}
+
+/* Share Experience Section */
+.share-experience {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.share-experience textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--input-border-color);
+    font-size: 1em;
+}
+
+.share-experience button {
+    background-color: var(--button-bg-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.share-experience button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Experience Feed */
+.experience-feed {
+    margin-bottom: 40px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post h3 {
+    font-size: 1.5em;
+    color: #161414;
+}
+
+.post p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.post a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Comment Section */
+.comments-section {
+    margin-top: 10px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.comment p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Button styles */
+button {
+    background-color: var(--button-bg-color);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+/* Accessibility for keyboard navigation */
+button:focus, input:focus, textarea:focus {
+    outline: 2px solid var(--highlight-color);
+    outline-offset: 2px;
+}
